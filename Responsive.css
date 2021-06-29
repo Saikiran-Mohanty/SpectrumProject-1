@@ -1,0 +1,125 @@
+/* @media (max-width: 350px){
+    .banner{
+        display: none;
+    } */
+    /* 576 */
+    @media (max-width: 1368px){
+        /* dropdown menu desin___________ */
+        .nav{
+            display: none;
+        }
+.dropdown{
+    margin-top: -2.5rem;
+    display: block;
+}
+.dropdown a{
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.548);
+    color: white;
+    padding: 0.2rem 1rem;
+    border-radius: 10px;
+}
+.navbtn{
+    margin: 0.5rem;
+}
+.ddbox {
+    display: none;
+}
+.dropdown:hover .ddbox{
+    display: block;
+}
+.dropdown a:hover{
+    background-color: black;
+    color: white;
+}
+.banner{
+    font-size: 12px;
+}
+/* ***************************************** */
+    }
+
+
+    /* ********************************************** */
+    @media (max-width: 600px){
+        #reginfo{
+            display: none;
+        }
+        .joinError{
+            display: flex;
+            /* border: 2px solid red; */
+            color: white;
+            margin-left: -11rem;
+            /* margin-right: 5rem; */
+            font-size: 32px;
+            font-weight: bold;
+            background-color: black;
+            border-radius: 10px;
+            padding: 1rem;
+        }
+        .banner{
+            font-size: 6px;
+        }
+    }
+
+    /* ***************************************************** */
+
+@media (max-width: 1010px) { 
+/* Heading_____________________________ */
+/* dropdown menu desin___________ */
+.dropdown{
+    margin-top: -2.5rem;
+    display: block;
+}
+.dropdown a{
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.548);
+    color: white;
+    padding: 0.2rem 1rem;
+    border-radius: 10px;
+}
+.navbtn{
+    margin: 0.5rem;
+}
+.ddbox {
+    display: none;
+}
+.dropdown:hover .ddbox{
+    display: block;
+}
+.dropdown a:hover{
+    background-color: black;
+    color: white;
+}
+
+/* ***************************************** */
+.navbar{
+    flex-direction: column;
+    }
+.navlink{
+    display: none;
+    margin-left: auto;
+}
+.navlogo{
+   /* border: 2px solid red; */
+   max-width: 100%;
+}
+.banner{
+    font-size: 16px;
+}
+/* ABOUT uS____________________________ */
+
+
+.about img{
+   display: none;
+}
+
+
+.wings{
+    flex-direction: column;
+}
+.wings img{
+    height:60%;
+    width:70% ;
+}
+
+}

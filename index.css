@@ -1,0 +1,641 @@
+*{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+.dropdown{
+  display: none;
+}
+.navbar{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:rgba(255, 255, 255, 0.466)
+    /* border:2px solid red; */
+}
+.navlogo{
+    /* border: 2px solid red; */
+        display: inline-block;
+        /* filter: invert(100%); */
+        height: 8rem;
+        width: 15rem;
+        padding-top: 0rem;
+        /* padding-left: 36px; */
+}
+.navlink{
+    /* border: 2px solid yellow; */
+    /* display: flex; */
+    height: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 42rem;
+}
+.nav ul li{
+    display: inline-block;
+    list-style: none;
+}
+.navlink a{
+    display: block;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 0.2rem 2rem;
+}
+.navlink li a:hover{
+    background-color: black;
+    color: white;
+    font-size:1.5rem ;
+}
+/* Banner styling */
+.banner{
+    /* border: 2px solid red; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        margin-top: 4.1rem;
+        padding: 0;
+        font-size: 20px;
+        /* background: #000; */
+        /* background-image: url(https://spectrumcet.com/assets/tablogo.png);
+        background-size: cover;
+        background-repeat: no-repeat; */
+        
+  color: #fff;
+  height: auto;
+  min-height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+}
+.banner,
+.banner:before,
+.banner:after {
+  box-sizing: border-box;
+  position: relative;
+}
+.banner img{
+        max-width: 100%;
+    }   
+main {
+    background: #111;
+    /* border: solid 1px #222; */
+    padding: 2rem;
+    max-width: 100%;
+    width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem; 
+  }
+  main
+    {
+        grid-column: 1 / -1;
+      }
+      .banner   p {
+        line-height: 1.8;
+        margin: 1rem 0;
+        /* color: rgb(158, 166, 184); */
+      }
+      
+      .banner  h1 {
+        line-height: 1.3;
+        font-size: 5vw;
+        margin: 1rem 0;
+      }
+      
+      .banner  h2 {
+        font-size: 4vw;
+        margin: 1rem 0;
+      }
+      
+      .banner  h3 {
+        font-size: 2vw;
+        font-weight: bold;
+      }
+      
+      .banner  h2.subheader {
+        font-size: 2vw;
+      }
+      
+      .banner  section {
+        grid-column: auto;
+      }
+      
+      .banner  header {
+        display: grid;
+        align-content: center;
+        grid-column: 1 / -1;
+      }
+      
+      .banner  .callout {
+        text-align: center;
+        background-color: #3173fa;
+        padding: 1vw 3vw;
+      }
+      .callout pp {
+        color: white;
+      }
+    
+      /* ---------------------------------- */
+          
+   .container{
+        perspective: 1200px;
+        transform-style: preserve-3d;
+        animation: cinematic-camera 11s cubic-bezier(0.6, 0, 0.4, 1) both infinite;
+  }
+  @keyframes cinematic-camera {
+    from {
+      perspective-origin: 60% 40% ;
+    }
+    to {
+      perspective-origin: 40% 60%;
+    }
+    /* 
+      Move the fading to the containing element as to not break inside 3D transforms. 
+    */
+    from,
+    to {
+      opacity: 0;
+    }
+    25%,
+    75%{
+      opacity: 1;
+    }
+}
+/* .container:after{
+    content: "";
+    background: linear-gradient(to bottom, rgb(248, 247, 247), rgba(250, 248, 248, 0) 20%, rgba(241, 237, 237, 0) 80%, rgb(247, 244, 244));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+} */
+
+/* _______________________________________ */
+
+.banner main {
+    transform-origin: top center;
+    transform-style: preserve-3d;
+  
+    animation: inherit;
+    animation-name: cinematic;
+}
+     /* Fixed the 3D image transform. */
+    main img {
+      display: block;
+      transform-style: preserve-3d;
+      animation: inherit;
+      animation-name: image-pop;
+    }
+      @keyframes image-pop {
+        70%,
+        100% {
+          transform: translate3d(0, 0, 60px);
+        }
+      }
+  
+      main:last-of-type {
+        animation-delay: 1s;
+      }
+      @keyframes cinematic {
+        from {
+          transform: translateZ(-200px) rotateY(30deg) translateY(50vh);
+        }
+        to {
+          transform: translateZ(-100px) rotateY(-30deg) translateY(-100%)
+            translateY(50vh);
+        }
+      }
+      .fix::before{
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        /* padding-top: 0.5rem; */
+        background: url(https://spectrumcet.com/assets/spectrum.png) no-repeat center center/cover ;
+        /* background-size: 100rem 60rem; */
+        height: 100%;
+        width: 100%;
+        z-index: -7;
+      }
+      /* ______SECIONTS_______ */
+/* _____ABOUT US SECTION_________ */
+.sec2{
+    /* border: 2px solid yellow; */
+    background: #202030;;
+    color: white;
+    padding-top: 1rem;
+    border-radius: 8px;
+}    
+.about{
+    /* border: 2px solid yellow; */
+    display:flex;
+    margin-top: -0.5rem;
+}   
+.about img{
+    height: 20rem;
+    width: 25rem;
+}
+.about p{
+    padding: 1rem;
+    font-family:cursive, Verdana, Geneva, Tahoma, sans-serif;
+}
+.ourwings{
+    /* border: 2px solid yellow; */
+    text-align: center;
+}
+
+.wings{
+    display: flex;
+    padding: 2rem;
+    text-align: center;
+}
+.wings img{
+    margin-top: 2rem;
+    height: 15rem;
+    width: 20rem;
+    border-radius: 20px;
+}
+.w{
+    border-radius: 10px;
+}
+.w:hover{
+    color: black;
+    background-color: white;
+    transition:background-color .5s ease-out 0s;
+    width: 100%;
+}
+
+/* ________SEC___________ */
+
+.sec3 {
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.568);
+  }
+  
+  svg {
+    height: 100vmin;
+    left: calc(50% - 50vmin);
+    position: relative;
+    width: 100vmin;
+  }
+  
+  .ball-top {
+    animation: BallTopMove 4s both infinite;
+    motion-path: path("m 66.2,39.264578 c 0,0 -5.195345,-18.056477 -20.4,-18.056477 -15.204655,0 -20.4,17.930208 -20.4,17.930208");
+    offset-path: path("m 66.2,39.264578 c 0,0 -5.195345,-18.056477 -20.4,-18.056477 -15.204655,0 -20.4,17.930208 -20.4,17.930208");
+    motion-offset: 0%;
+    offset-distance: 0%;
+  }
+  
+  .ball-bottom {
+    animation: BallBottomMove 4s both infinite;
+    motion-path: path("m 66.2,58.979615 c 0,0 -5.195345,18.056477 -20.4,18.056477 -15.204655,0 -20.4,-17.930208 -20.4,-17.930208");
+    offset-path: path("m 66.2,58.979615 c 0,0 -5.195345,18.056477 -20.4,18.056477 -15.204655,0 -20.4,-17.930208 -20.4,-17.930208");
+    motion-offset: 100%;
+    offset-distance: 100%;
+  }
+  
+  .thinkMaskCircle {
+    animation: ClipSmallMove 4s both infinite;
+  }
+  
+  .createMaskCircle {
+    animation: ClipBigMove 4s both infinite;
+  }
+  
+  @keyframes BallTopMove {
+    0% {
+      motion-offset: 0%;
+      offset-distance: 0%;
+      transform: scale(0);
+    }
+    10% { transform: scale(1); }
+    42.5% { transform: scale(1); }
+    50% {
+      motion-offset: 100%;
+      offset-distance: 100%;
+      transform: scale(0);
+    }
+    100% {
+      motion-offset: 100%;
+      offset-distance: 100%;
+      transform: scale(0);
+    }
+  }
+  
+  @keyframes BallBottomMove {
+    0% {
+      motion-offset: 100%;
+      offset-distance: 100%;
+      transform: scale(0);
+    }
+    50% {
+      motion-offset: 100%;
+      offset-distance: 100%;
+      transform: scale(0);
+    }
+    60% { transform: scale(1); }
+    92.5% { transform: scale(1); }
+    100% {
+      motion-offset: 0%;
+      offset-distance: 0%;
+      transform: scale(0);
+    }
+  }
+  
+  @keyframes ClipSmallMove {
+    0% { transform: translateY(-63%); }
+    17.5% { transform: translateY(-63%); }
+    50% { transform: translateY(0%); }
+    62.5% { transform: translateY(63%); }
+    100% { transform: translateY(63%); }
+  }
+  
+  @keyframes ClipBigMove {
+    0% { transform: translateY(0%); }
+    17.5% { transform: translateY(-63%); }
+    50% { transform: translateY(-63%); }
+    62.499% { transform: translateY(-63%); }
+    62.5% { transform: translateY(63%); }
+    100% { transform: translateY(0%); }
+  }
+  /* __________________________________________________________________________________________________ */
+
+  /* ____________SECTION4_______________________ */
+  .sec4 {
+    font-family: "Montserrat", sans-serif;
+    background: #202030;
+    padding: 2rem 2rem;
+    border-radius: 5px;
+  }
+  .sec4 h2{
+      color: white;
+  }
+  
+  .item-grid {
+    max-width: 900px;
+    margin: 100px auto;
+    position: relative;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.3);
+    overflow:hidden;
+  }
+  
+  .item {
+    position: relative;
+    float: left;
+    width: 33.33333333333%;
+    background-color: #128EF3;
+    overflow: hidden;
+    }
+    .item:after {
+        content: '';
+        display: block;
+        background-color: inherit;
+        opacity: 0.9;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: scale(2) translateX(-75%) translateY(-75%) translateZ(0) rotate(-28deg);
+        transition: transform 3s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .item:hover:after {
+        transform: scale(2) translateX(0%) translateY(0%) translateZ(0) rotate(-28deg);
+      }
+      .item:hover .item-image {
+        transform: scale(1.2) translateZ(0);
+      }
+      .item:hover .item-text {
+        opacity: 1;
+        transform: translateY(0);
+      }
+  .item-image {
+    height: auto;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 750ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+    .item-image::before {
+      content: "";
+      display: block;
+      padding-top: 75%;
+      overflow: hidden;
+    }
+    .item-image img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      line-height: 0;
+    }
+  
+  
+  .item-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    text-align: center;
+    z-index: 1;
+    color: #ffffff;
+    transition: opacity 500ms cubic-bezier(0.23, 1, 0.32, 1), transform 500ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition-delay: 300ms;
+    transform: translateY(-20%);
+  }
+  
+  .item-text-wrapper {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .item-text-title {
+    font-weight: normal;
+    font-style: 14px;
+    padding: 0 15px;
+    margin: 5px 0 0 0;
+  }
+  
+  .item-text-dek {
+    text-transform: uppercase;
+    font-style: 12px;
+    opacity: 0.7;
+    margin: 0;
+  }
+  
+  .item-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    line-height: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+  }
+  /* ____________________________________________________________________________________________ */
+
+/* ___________SECTION5______________________________ */
+/* REGISTRATION FORM  */
+.joinError{
+  display: none;
+}
+.form-container{
+    margin: 6rem 18rem;
+    margin-bottom: 1rem;
+    padding:auto;
+    padding-bottom: 5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec5{
+    /* position: absolute; */
+    /* width: 100%; */
+    /* height: 100%; */
+    border-radius: 20px;
+    background-color: #0505054d;
+    z-index: -1;
+    padding-top: 2rem;
+}
+.regform h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: -2rem;
+    margin-bottom: auto;
+    /* margin-left: 4.7rem; */
+}
+#reginfo {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Baloo Bhai 2', cursive;
+    padding: 4rem 4rem;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+#reginfo p{
+    margin: 0.3rem;
+    padding: 2px;
+    font-size: 1rem;
+}
+#reginfo fieldset{
+    padding: 24px 12px;
+}
+#reginfo div{
+    display: flex;
+    flex-direction: column;
+    margin: 0.3rem;
+}
+#reginfo input{
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+#reginfo textarea{
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+#reginfo button{
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 1rem 5rem;
+    margin-bottom: -0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+#reginfo button:hover{
+    font-size: 1rem;
+    border: 2px solid grey;
+    background-color: black;
+    color: white;
+}
+
+/* FOUNDER AND FOOTER */
+
+ /*Founder part designing*/
+
+ .founder{background-color: rgb(245, 241, 240);
+    text-align: center;
+}
+.founder img{
+    border-radius: 25rem;
+    width: 8rem;
+    opacity: 95%;
+}
+/* ___________________________________________________________________________________________________________ */
+
+/*footer styling*/
+.sec6{
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background: #222;
+    color: white
+};
+/* .footerimg{
+    position: absolute;
+    border: 2px solid red;
+    width: 20rem;
+    height: 50rem;
+    margin: 0rem;
+} */
+/* footer img{
+    border-radius: 25rem;
+    width: 2rem;
+    opacity: 95%;
+    background-color: rgb(245, 241, 240);
+    left: 20rem;
+} */
+.sec6 h3{
+    margin-top: 0rem;
+}
+footer{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #333;
+    height: 5rem;
+}
+footer a {
+    text-decoration: none;
+    padding: 7px;
+    color: white;
+    }
+
+
+
+
+
+/* ___Utility class_____ */
+.subhead{
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.smallfont{
+    font-size: 12px;
+}

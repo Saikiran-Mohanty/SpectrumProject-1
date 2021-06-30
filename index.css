@@ -4,6 +4,8 @@
 body{
     background-color: black;
 }
+
+/* _____________________Navigation Bar____________________________________________ */
 .dropdown{
   display: none;
 }
@@ -50,7 +52,11 @@ body{
     color: white;
     font-size:1.5rem ;
 }
-/* Banner styling */
+/* ****************************************************************************** */
+
+
+
+/* __________________Banner styling_____________________ */
 .banner{
     /* border: 2px solid red; */
     position: fixed;
@@ -147,7 +153,7 @@ main {
         color: white;
       }
     
-      /* ---------------------------------- */
+      /* --------------------------------------------------------------------------- */
           
    .container{
         perspective: 1200px;
@@ -182,8 +188,6 @@ main {
     width: 100%;
     height: 100vh;
 } */
-
-/* _______________________________________ */
 
 .banner main {
     transform-origin: top center;
@@ -230,8 +234,15 @@ main {
         width: 100%;
         z-index: -7;
       }
-      /* ______SECIONTS_______ */
-/* _____ABOUT US SECTION_________ */
+/* ************************************************************************************************** */
+
+
+
+      /* ------------------------______SECIONTS_______------------------------------- */
+
+
+
+/* _________________________ABOUT US SECTION____________________________ */
 .sec2{
     /* border: 2px solid yellow; */
     background: #202030;;
@@ -256,7 +267,6 @@ main {
     /* border: 2px solid yellow; */
     text-align: center;
 }
-
 .wings{
     display: flex;
     padding: 2rem;
@@ -278,7 +288,10 @@ main {
     width: 100%;
 }
 
-/* ________SEC___________ */
+/* ********************************************************************************************** */
+
+
+/* ____________________________SEC3__________________________________ */
 
 .sec3 {
     margin: 0;
@@ -372,7 +385,9 @@ main {
     62.5% { transform: translateY(63%); }
     100% { transform: translateY(0%); }
   }
-  /* __________________________________________________________________________________________________ */
+  /* **************************************************************************************** */
+
+
 
   /* ____________SECTION4_______________________ */
   .sec4 {
@@ -492,7 +507,9 @@ main {
     overflow: hidden;
     text-indent: -9999px;
   }
-  /* ____________________________________________________________________________________________ */
+  /* *************************************************************************************************** */
+
+
 
 /* ___________SECTION5______________________________ */
 /* REGISTRATION FORM  */
@@ -570,21 +587,20 @@ main {
     color: white;
 }
 
-/* FOUNDER AND FOOTER */
-
- /*Founder part designing*/
-
- .founder{background-color: rgb(245, 241, 240);
+/* __________________________________________________________________________________________________________ */
+ /* .founder{background-color: rgb(245, 241, 240);
     text-align: center;
 }
 .founder img{
     border-radius: 25rem;
     width: 8rem;
     opacity: 95%;
-}
+} */
 /* ___________________________________________________________________________________________________________ */
 
-/*footer styling*/
+
+/* --------------------------------------------------------------------------------------------------------- */
+/*_____________________________footer styling______________________*/
 .sec6{
     /* border: 2px solid red; */
     border-radius: 10px;
@@ -592,8 +608,10 @@ main {
     text-align: center;
     flex-direction: column;
     background: #222;
-    color: white
-};
+    color: white;
+    padding: 2rem 0rem;
+    margin-bottom: -1.5rem;
+}
 /* .footerimg{
     position: absolute;
     border: 2px solid red;
@@ -610,6 +628,8 @@ main {
 } */
 .sec6 h3{
     margin-top: 0rem;
+    margin-bottom: 2rem;
+    padding: 0rem 10rem;
 }
 footer{
     margin-top: 1rem;
@@ -625,7 +645,7 @@ footer a {
     color: white;
     }
 
-/* ________________________________Mouse Traker_________________________________________ */
+/* ________________________________Mouse Traker Eye Movement (Future-live chat bbutton)_________________________________________ */
 
 
 .face{
@@ -687,35 +707,11 @@ footer a {
   border-radius: 50%;
 }
 
+/* *********************************************************************************************** */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ___Utility class_____ */
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+  /* _________________________Utility class____________________ */
 .subhead{
     text-align: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -725,3 +721,16 @@ footer a {
 .smallfont{
     font-size: 12px;
 }
+.difFont{
+  font-family: cursive;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+  letter-spacing: 0.5rem;
+  /* border: 2px solid white; */
+  color: #111;
+  background-color: white;
+  border-radius: 10px;
+  margin: 0rem 5rem ;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */

@@ -625,6 +625,92 @@ footer a {
     color: white;
     }
 
+/* ________________________________Mouse Traker_________________________________________ */
+
+
+.face{
+  /* border: 2px solid red; */
+  margin-top: 35rem;
+  margin-left: 88rem;
+  position: fixed;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: rgba(2, 2, 2, 0.349);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.face::before{
+  content: '';
+  position: absolute;
+  top: 3.2rem;
+  width: 2.3rem;
+  height: 1rem;
+  background: rgb(179, 179, 179);;
+  border-bottom-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+  transition: 0.5s;
+}
+.face:hover::before{
+  top: 3.3rem;
+  width: 2rem;
+  height: 0.4rem;
+  background: rgb(179, 179, 179);;
+  border-bottom-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+}
+.eyes{
+  position: relative;
+  top: -0.8rem;
+  display: flex;
+}
+.eyes .eye{
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+  background: rgb(179, 179, 179);
+  margin: 0 0.3rem;
+  border-radius: 50%;
+}
+.eyes .eye::before{
+
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0.45rem;
+  transform: translate(-50%, -50%);
+  width: 0.6rem;
+  height: 0.6rem;
+  background: black;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
